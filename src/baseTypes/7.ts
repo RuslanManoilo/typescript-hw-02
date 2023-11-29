@@ -14,6 +14,10 @@ enum DaysOfWeek {
 };
 
 function isWeekend(day: DaysOfWeek): boolean {
-  if (day === DaysOfWeek.SATURDAY || DaysOfWeek.SUNDAY) true;
+  if (day === DaysOfWeek.SATURDAY ||day === DaysOfWeek.SUNDAY) {
+    return true
+  };
   return false;
 };
+
+console.log(isWeekend(DaysOfWeek.FRIDAY));
